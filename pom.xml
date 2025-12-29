@@ -12,7 +12,7 @@
 	<artifactId>gcp-uppgift</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gcp-uppgift</name>
-	<description>GCP &amp; docker automatic CI/CD</description>
+	<description>GCP + docker automatic CI/CD</description>
 	<url/>
 	<licenses>
 		<license/>
