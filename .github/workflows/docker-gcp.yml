@@ -19,7 +19,7 @@ jobs:
 
       - name: Configure Docker for Artifact Registry
         run: |
-          gcloud auth configure-docker europo-north1-docker.pkg.dev
+          gcloud auth configure-docker europe-north1-docker.pkg.dev
 
       - name: Build docker image
         run: |
