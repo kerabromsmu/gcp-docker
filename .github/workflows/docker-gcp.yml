@@ -29,7 +29,7 @@ jobs:
         run: |
           docker push europe-north1-docker.pkg.dev/stoked-duality-482008-r8/gcp-uppgift/gcp-uppgift:latest
 
-      - name: Deploy docker image on GCP
+      - name: Deploy the docker image on GCP
         run: |
           gcloud run deploy gcp-uppgift \
           --image=europe-north1-docker.pkg.dev/stoked-duality-482008-r8/gcp-uppgift/gcp-uppgift:latest \
