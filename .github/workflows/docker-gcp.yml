@@ -37,4 +37,4 @@ jobs:
           --platform=managed \
           --allow-unauthenticated \
           --format="value(status.url)" \
-          --add-cloudsql-instance=stoked-duality-482008-r8:europe-north1:bujum
+          --add-cloudsql-instances=stoked-duality-482008-r8:europe-north1:bujum
