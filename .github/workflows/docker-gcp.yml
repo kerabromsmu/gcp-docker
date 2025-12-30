@@ -28,3 +28,13 @@ jobs:
       - name: Push docker image to GCP
         run: |
           docker push europe-north1-docker.pkg.dev/stoked-duality-482008-r8/gcp-uppgift/gcp-uppgift:latest
+
+      - name: Deploy docker image on GCP
+        run: |
+          gcloud run deploy gcp-uppgift \
+          --image=europe-north1-docker.pkg.dev/stoked-duality-482008-r8/gcp-uppgift/gcp-uppgift:latest \
+          --region=europe-north1 \
+          --platform=managed \
+          --allow-unauthenticated \
+          --format="value(status.url)" \
+          --add-cloudsql-instance=stoked-duality-482008-r8:europe-north1:bujum
